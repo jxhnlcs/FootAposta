@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\login.css">
+    <link rel="stylesheet" href="css\logincad.css">
     <title>Login</title>
 </head>
 <body>
     <div class="main-login">
         <div class="left-login">
-            <h1>Faça sua aposta já!<br>Crie uma conta ou faça o login</h1>
-            <img src="img/high-five-animate.svg" class="left-login-image" alt="Animação portal">
+            <<img src="/img/logint.png" alt="">
+            <img src="img/soccer-animate.svg" class="left-login-image" alt="Animação portal">
         </div>
         <div class="right-login">
             <div class="card-login" method="post" action="_scripts/autenticar.php">

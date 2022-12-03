@@ -1,2 +1,0 @@
-Adiantei algumas coisinhas, mas nao mexi em nada em relação ao banco, boa sorte pra fazer isso :D
-Termina a tela de cadastro, e tenta colocar o banco pra funcionar na tela de login, eu te amo <3

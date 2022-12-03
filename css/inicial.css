@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+/* Nav */
+
+.navbar{
+    background-color: #0C0B25;
+    z-index: 2;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #00ff88;
+    transition: 0.5s;
+}
+
+.navbar-toggler{
+    color: white;
+    background-color: white;
+}
+
+.title{
+    color: #00ff88;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Fim Nav */
+
+/* Conteudo da tela incial */
+
+.main-conteudo{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-conteudo{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-conteudo > h1{
+    color: #77ffc8;
+    font-size: 3vw;
+}
+
+.left-login-image{
+    width: 35vw;
+    margin-bottom: 50px;
+}
+
+.right-conteudo{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+    margin-left: 140px;
+}
+
+.right-conteudo > h1{
+    color: white;
+}
+
+/* Fim da tela incial */
+
+
+/* Responsivade tela inicial */
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}

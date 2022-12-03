@@ -6,17 +6,20 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <h2 class="title">FootAposta</h2>
+    <a class="title" href="inicial.php">FootAposta</a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Jogos</a>
+        <li class="nav-item active">
+          <a class="nav-link active" aria-current="page" href="#">Jogos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Resultados</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Usuário</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sair</a>
         </li>
       </ul>
     </div>
