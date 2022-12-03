@@ -1,28 +1,15 @@
 @media only screen and (max-width:950px){
-    .card-login{
+    .card-apostas{
         width: 85%;
     }
 }
 
 @media only screen and (max-width:600px){
-    .main-login{
-        flex-direction: column;
-    }
-    .left-login > h1{
-        display: none;
-    }
-    .left-login{
-        width: 100%;
+    .conteudo1{
+        width: 70%;
         height: auto;
     }
-    .right-login{
-        width: 100%;
-        height: auto;
-    }
-    .left-login-image{
-        width: 50vw;
-    }
-    .card-login{
+    .card-apostas{
         width: 90%;
     }
 }

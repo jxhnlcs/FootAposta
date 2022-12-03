@@ -1,6 +1,6 @@
 <div class="conteudo1">
             <h5 class="titulo">Jogos</h5>
-            <div class="card-login">
+            <div class="card-apostas">
                 <div class="textfield">
                     <img class="bandeira item" src="img/catar.png" alt="Imagem catar">
                     <h2 class="item">CAT</h2>
