@@ -14,7 +14,7 @@
             <img src="img/soccer-animate.svg" class="left-login-image" alt="Animação portal">
         </div>
         <div class="right-login">
-            <div class="card-login">
+            <form class="card-login" method="post" action="_scripts/autenticar.php">
                 <h1>FootAposta</h1>
                 <div class="textfield">
                     <label for="usuario">Nome</label>
@@ -31,7 +31,7 @@
                 <button class="btn-login">CADASTRAR</button>
                 <h6 class="linha"> </h6>
                 <h2 class="naotem">Já tem login?<a class="cadast" href="login.php"> Entrar</a></h6></h2>
-            </div>
+            </form>
         </div>
     </div>
 </body>
