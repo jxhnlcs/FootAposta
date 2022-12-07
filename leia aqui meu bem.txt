@@ -1,0 +1,7 @@
+Baixa as imagens que estão na pasta img, e copia e cola na pasta img do htdocs;
+Se as imagens não tiverem nessa pasta nao funciona;
+As imagens tem que tá na pasta img do bolao e a img do htdocs;
+
+Coloca o banco igual ta no banco.txt;
+Vc pode pedir ajuda a jean ou a neri também, eles já fizeram essa parte de cadastro;
+Beijo eu te amo 
