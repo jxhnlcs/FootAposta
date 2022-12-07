@@ -10,7 +10,7 @@ Se tu quiser ver tá no autenticar.php linha 13 do meu código
 
 Exclui a tabela q vc fez no seu pc e coloca a nova que deixei no banco.txt, ele ta certo.
 
-No banco.txt tem um insert into q ja insere meu email e uma senha criptografa com md5, executa no lugar de escrever dps de criar a tabela pra testar se ta funcionando o login pelo menos.
+No banco.txt tem um insert into q ja insere meu email e uma senha criptografa com md5 ( aquele site q a gente usou pra criptografar senha md5 generator), executa no lugar de escrever dps de criar a tabela pra testar se ta funcionando o login pelo menos.
 
 E a parte da cadastro já ta meio q digitada no login.php se tu ler o código tu percebe, só que tem q ajeitar pq n ta cadastrando o usuario ta aparecendo como se n tivesse encontrado login enfim vc vai ver quando tenta cadastrar.
 
