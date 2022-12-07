@@ -18,15 +18,15 @@
                 <h1>FootAposta</h1>
                 <div class="textfield">
                     <label for="usuario">E-mail</label>
-                    <input type="text" required name="usuario" placeholder="Digite seu e-mail">
+                    <input type="text" required name="email" id='email' placeholder="Digite seu e-mail">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" required name="senha" placeholder="Digite sua senha">
+                    <input type="password" required name="senha" id='senha' placeholder="Digite sua senha">
                 </div>
                 <button class="btn-login">ENTRAR</button>
                 <h6 class="linha"> </h6>
-                <h2 class="naotem">Não tem cadastro?<a class="cadast" href="cadastro.php"> Cadastre-se</a></h6></h2>
+                <h2 class="naotem">Não tem cadastro?<a class="cadast" href="cadastro.php"> Cadastre-se</a></h2>
             </form>
         </div>
     </div>

@@ -1,11 +1,10 @@
 <?php
 $servidor = 'localhost';
-$usuario = 'root';
+$email = 'root';
 $senha = '';
-$banco = //coloca o nome do banco meu bem;
+$banco = 'bolao';
 
 //string de conexão
-$mysqli = new mysqli($servidor,$usuario,$senha,$banco);
-
+$mysqli = new mysqli($servidor,$email,$senha,$banco);
 
 ?>

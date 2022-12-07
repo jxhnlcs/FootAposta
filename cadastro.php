@@ -14,19 +14,19 @@
             <img src="img/soccer-animate.svg" class="left-login-image" alt="Animação portal">
         </div>
         <div class="right-login">
-            <form class="card-login" method="post" action="_scripts/autenticar.php">
+            <form class="card-login" method="post" action="_scripts/cadastrar.php">
                 <h1>FootAposta</h1>
                 <div class="textfield">
                     <label for="usuario">Nome</label>
-                    <input type="name" required name="email" placeholder="Digite seu nome">
+                    <input type="name" required id="nome" name="nome" placeholder="Digite seu nome">
                 </div>
                 <div class="textfield">
                     <label for="usuario">E-mail</label>
-                    <input type="email" required name="email" placeholder="Digite seu e-mail">
+                    <input type="email" required id="email" name="email" placeholder="Digite seu e-mail">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" required name="senha" placeholder="Digite sua senha">
+                    <input type="password" required id="senha" name="senha" placeholder="Digite sua senha">
                 </div>
                 <button class="btn-login">CADASTRAR</button>
                 <h6 class="linha"> </h6>
