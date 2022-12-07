@@ -55,7 +55,7 @@ if(!empty($_POST['email'])){
             <script type="text/javascript">
                 Swal.fire({
                     title:'Salvo',
-                    text:'Aluno Cadastrado com Sucesso',
+                    text:'Usuario Cadastrado com Sucesso',
                     icon:'success',
                     confirmButtonText:'Ok'
                 }).then((result)=>{
