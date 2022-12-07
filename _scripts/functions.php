@@ -18,14 +18,4 @@ function validarUsuario($id,$tabela){
 
 }
 
-function dadosUser($email){
-    include "config.php";
-    $sql = "SELECT login FROM login WHERE email = '$email'";
-    $query = $mysqli->query($sql);
-    $dados = $query->fetch_array();
-
-    return $dados['login'];
-}
-
-
 ?>

@@ -16,7 +16,7 @@
           <a class="nav-link" href="#">Resultados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> <?php echo dadosUser($email); ?></a>
+          <a class="nav-link" href="#"><!--mexer depois --></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sair</a>

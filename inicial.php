@@ -21,7 +21,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="title" href="inicial.php">FootApostas</a>
+    <a class="title" href="inicial.php">FootAposta</a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
@@ -31,7 +31,7 @@
           <a class="nav-link" href="#">Resultados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> <?php echo dadosUser($email); ?></a>
+          <a class="nav-link" href="#"><!---mexer depois --></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Sair</a>
