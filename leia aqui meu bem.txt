@@ -12,8 +12,9 @@ Exclui a tabela q vc fez no seu pc e coloca a nova que deixei no banco.txt, ele 
 
 No banco.txt tem um insert into q ja insere meu email e uma senha criptografa com md5, executa no lugar de escrever dps de criar a tabela pra testar se ta funcionando o login pelo menos.
 
-E a parte da cadastro já ta meio q digitada no autenciar.php e no login.php se tu ler o código tu percebe, só que tem q ajeitar pq dando uns resultados errados enfim vc vai ver quando tenta cadastrar.
+E a parte da cadastro já ta meio q digitada no login.php se tu ler o código tu percebe, só que tem q ajeitar pq n ta cadastrando o usuario ta aparecendo como se n tivesse encontrado login enfim vc vai ver quando tenta cadastrar.
 
+Ve uns video no youtube os menino disse que fizeram vendo video no youtube e conseguiram, ent tentar fazer o msm se n conseguir sozinha
 
 Tentei deixar tudo mastigadinho pra vc n ficar com dor de cabeça e com raiva boa sorte tabom
-Beijos eu te amo muito mesmo tá bom linda linda linda
+Beijos eu te amo muito mesmo tá bom linda linda linda por favor casa comigo!
