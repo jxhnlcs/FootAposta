@@ -21,9 +21,20 @@ $total = $query->num_rows;
 
 
 
-if($total>=1){
-    echo "Usuário já cadastrado";
-}else{
+if($total>=1){?>
+    <script type="text/javascript">
+        Swal.fire({
+            title:'Ops!',
+            text:'Usuário já cadastrado!',
+            icon:'error',
+            confirmButtonText:'Ok'
+        }).then((result)=>{
+            if(result.isConfirmed){
+                location.href="../login.php";
+            }
+        })
+    </script>
+<?php }else{
     $sql = "INSERT INTO login values (NULL, '$email', '$senha','$nome')";
     $query = $mysqli->query($sql);
     
