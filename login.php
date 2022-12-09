@@ -26,52 +26,9 @@
                 </div>
                 <button class="btn-login">ENTRAR</button>
                 <h6 class="linha"> </h6>
-                <h2 class="naotem">Não tem cadastro?<a class="cadast" href="cadastro.php"> Cadastre-se</a></h6></h2>
+                <h2 class="naotem">Não tem cadastro?<a class="cadast" href="cadastro.php"> Cadastre-se</a></h2>
             </form>
         </div>
     </div>
 </body>
 </html>
-<?php
-if(!empty($_POST['email'])){
-    include "_scripts/config.php";
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    if(validarUsuario($senha,'login')>=1){ ?>
-        <script type="text/javascript">
-            Swal.fire(
-            'Ops!',
-            'Verifique se sua senha ou seu e-mail está correto.',
-            'question'
-            )
-        </script>
-    <?php }else{
-
-        $sql = "INSERT INTO login (email,senha) VALUES ('$email','$senha')";
-        $query = $mysqli->query($sql);
-
-        if($query){ ?>
-            <script type="text/javascript">
-                Swal.fire({
-                    title:'Salvo',
-                    text:'Usuario Cadastrado com Sucesso',
-                    icon:'success',
-                    confirmButtonText:'Ok'
-                }).then((result)=>{
-                    if(result.isConfirmed){
-                        location.href="login.php";
-                    }
-                })
-            </script>
-        <?php }else{ ?>  
-            <script type="text/javascript">
-                swal("Erro");
-            </script>
-        <?php }
-    }
-
-
-}
-
-?>
