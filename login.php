@@ -2,33 +2,29 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\logincad.css">
-    <title>Login</title>
+    <title>FootAposta</title>
+    <link rel="stylesheet" href="./css/loginn.css">
 </head>
 <body>
-    <div class="main-login">
-        <div class="left-login">
-            <<img src="/img/logint.png" alt="">
-            <img src="img/soccer-animate.svg" class="left-login-image" alt="Animação portal">
-        </div>
-        <div class="right-login">
-            <form class="card-login" method="post" action="_scripts/autenticar.php">
-                <h1>FootAposta</h1>
-                <div class="textfield">
-                    <label for="usuario">E-mail</label>
-                    <input type="text" required name="email" id='email' placeholder="Digite seu e-mail">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" required name="senha" id='senha' placeholder="Digite sua senha">
-                </div>
-                <button class="btn-login">ENTRAR</button>
-                <h6 class="linha"> </h6>
-                <h2 class="naotem">Não tem cadastro?<a class="cadast" href="cadastro.php"> Cadastre-se</a></h2>
-            </form>
-        </div>
+    <div class="box">
+        <form class="form" action="_scripts/autenticar.php" method="post">
+            <h2>FootAposta</h2>
+            <div class="inputBox">
+                <input type="email" name="email" required="required">
+                <span>E-mail</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="senha" required="required">
+                <span>Senha</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="cadastro.php">Não tem cadastro?</a>
+            </div>
+            <button class="button" type="submit" value="Entrar">Entrar</button>
+</form>
     </div>
 </body>
 </html>

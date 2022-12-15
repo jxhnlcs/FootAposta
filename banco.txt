@@ -1,8 +1,101 @@
 CREATE TABLE `login` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(100) DEFAULT NULL,
+  `login` varchar(100) DEFAULT NULL,
   `senha` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+insert into login(email, senha) values ('joohnzay@gmail.com', '202cb962ac59075b964b07152d234b70');
+
+alter table login add nome varchar(200);
+
+-----------------------------------------
+
+//criar tabela aposta
+
+CREATE TABLE `aposta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rt1` varchar(100) DEFAULT NULL,
+  `rt2` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
 
-insert into login(email, senha) values ('joohnzay@gmail.com', '202cb962ac59075b964b07152d234b70');
+-----------------------------------------
+
+// criar tabela dados_aposta
+
+CREATE TABLE `dados_aposta` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rtt1` varchar(100) DEFAULT NULL,
+  `rtt2` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+// inserir dados dos jogos 
+
+INSERT INTO `dados_aposta` (`id`, `rt1t`, `rtt2`) VALUES
+(1, 1, 3)
+(2, 1, 1)
+(3, 0, 2)
+(4, 0, 0)
+(5, 2, 0)
+(6, 2, 0)
+(7, 0, 1)
+(8, 2, 1)
+(9, 0, 1)
+(10, 1, 1)
+(11, 0, 2)
+(12, 4, 1)
+(13, 3, 3)
+(14, 1, 0)
+(15, 2, 3)
+(16, 2, 0)
+(17, 2, 0)
+(18, 1, 2)
+(19, 0, 1)
+(20, 0, 3)
+(21, 0, 0)
+(22, 0, 0)
+(23, 1, 0)
+(24, 1, 0)
+(25, 0, 1)
+(26, 1, 2)
+(27, 2, 3)
+(28, 7, 2)
+(29, 4, 2)
+(30, 3, 3)
+(31, 2, 0)
+(32, 1, 1)
+(33, 9, 2)
+(34, 3, 1)
+(35, 2, 0)
+(36, 7, 1)
+(37, 9, 3)
+(38, 6, 7)
+(39, 6, 1)
+(40, 5, 3)
+(41, 4, 2)
+(42, 2, 3)
+(43, 1, 2)
+(44, 2, 5)
+(45, 8, 3)
+(46, 0, 4)
+(47, 3, 0)
+(48, 1, 1)
+(49, 1, 2)
+(50, 0, 0)
+(51, 0, 0)
+(52, 4, 1)
+(53, 1, 2)
+(54, 7, 0)
+(55, 0, 0)
+(56, 1, 0)
+(57, 1, 0)
+(58, 2, 0)
+(59, 0, 0)
+(60, 3, 2)
+(61, 6, 2)
+(61, 0, 2)
+(62, 2, 0);
+
+---------------------------

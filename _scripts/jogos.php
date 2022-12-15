@@ -7,60 +7,60 @@ session_start();
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 <?php
 include "config.php";
-$email = $_POST['email'];
-$senha = md5($_POST['senha']);
-$nome = $_POST['nome'];
+$rt1 = $_POST['rt1'];
+$rt2 = $_POST['rt2'];
 
 
 
-$sql = "SELECT id FROM login WHERE email = '$email'";
+$sql = "SELECT id FROM aposta WHERE rt1 = '$rt1'";
 $query = $mysqli->query($sql);
 $total = $query->num_rows;
 
-
-
-if($total>=1){?>
-    <script type="text/javascript">
-        Swal.fire({
-            title:'Ops!',
-            text:'Usuário já cadastrado!',
-            icon:'error',
-            confirmButtonText:'Ok'
-        }).then((result)=>{
-            if(result.isConfirmed){
-                location.href="../login.php";
-            }
-        })
-    </script>
-<?php }else{
-    $sql = "INSERT INTO login values (NULL, '$email', '$senha','$nome')";
+    $sql = "INSERT INTO aposta values (NULL, '$rt1', '$rt2')";
     $query = $mysqli->query($sql);
     
     if($query){?>
             <script type="text/javascript">
                 Swal.fire({
                     title:'Salvo',
-                    text:'Usuário Cadastrado com Sucesso',
+                    text:'Aposta feita com Sucesso',
                     icon:'success',
                     confirmButtonText:'Ok'
                 }).then((result)=>{
                     if(result.isConfirmed){
-                        location.href="../login.php";
+                        location.href="../index.php";
                     }
                 })
+
             </script>
     <?php }else{ ?>
         <script type="text/javascript">
                 swal("Erro");
             </script>
     <?php }
-}
 
 
 ?>
+<?php
+if($rt1 and $rt2=='rt1' and 'rt2'){?>
+
+    <script type="text/javascript">
+        let tradeColor = document.getElementById('matche');
+            themeToggler.addEventListener('click', () =>{
+            document.body.classList.toggle("dark-theme-variables");
+            themeToggler.querySelector("span:nth-child(1)").classList.toggle("active");
+        })
+    </script>
+<?php }else{
+    }  { ?>
+       
+    <?php }
+
+
+?>
+
 
 </body>
 </html>
