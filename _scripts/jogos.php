@@ -43,23 +43,6 @@ $total = $query->num_rows;
 
 
 ?>
-<?php
-if($rt1 and $rt2=='rt1' and 'rt2'){?>
-
-    <script type="text/javascript">
-        let tradeColor = document.getElementById('matche');
-            themeToggler.addEventListener('click', () =>{
-            document.body.classList.toggle("dark-theme-variables");
-            themeToggler.querySelector("span:nth-child(1)").classList.toggle("active");
-        })
-    </script>
-<?php }else{
-    }  { ?>
-       
-    <?php }
-
-
-?>
 
 
 </body>

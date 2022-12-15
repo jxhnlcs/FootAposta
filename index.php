@@ -6,7 +6,7 @@
 <?php include "navbar.php"; ?>
 
 <!-- Conteudo principal -->
- <?php include "principal.php"; ?>
+ <?php include "novo.php"; ?>
 
 </body>
 </html>

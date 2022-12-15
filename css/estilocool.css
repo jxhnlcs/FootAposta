@@ -77,8 +77,8 @@ header ul li a:hover{
 }
 
 :root {
-    --bg: rgb(27, 61, 212);
-    --card-bg: rgb(244, 245, 247);
+    --bg: rgb(252, 253, 254);
+    --card-bg: rgba(244, 247, 244, 0.777);
     --white: #fff;
     --shadow: rgba(235, 240, 250, 0.731);
     --text-dark: rgb(5, 29, 49);
@@ -112,7 +112,7 @@ body {
 }
 
 .conteudo{
-    background: #0E0E3F;
+    background: #fafafa;
     margin-top: -30px;
 }
 
