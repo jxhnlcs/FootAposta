@@ -9,16 +9,16 @@ session_start();
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php
 include "config.php";
-$rt1 = $_POST['rt1'];
-$rt2 = $_POST['rt2'];
+$t1 = $_POST['cp'];
+$t2 = $_POST['cp'];
 
 
 
-$sql = "SELECT id FROM aposta WHERE rt1 = '$rt1'";
+$sql = "SELECT id FROM dados_jogos WHERE rt1','rt2' = '$'";
 $query = $mysqli->query($sql);
 $total = $query->num_rows;
 
-    $sql = "INSERT INTO aposta values (NULL, '$rt1', '$rt2')";
+    $sql = "INSERT INTO aposta values (NULL, '$t1', '$t2')";
     $query = $mysqli->query($sql);
     
     if($query){?>

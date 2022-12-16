@@ -166,3 +166,9 @@ header ul li a:hover{
     color: #00FF19;
     margin-right: 725px;
 }
+.nav-link{
+    color: white
+}
+.nav-link:hover{
+    color: #00FF19;
+}
