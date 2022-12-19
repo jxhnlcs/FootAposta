@@ -15,12 +15,17 @@
   <section>
     <header id="letras">
       <ul>
-      <p class="foottext">FootAposta</p>
+      <li class="nav-item">
+        <p class="foottext">FootAposta</p>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="inicial.php">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.php">Jogos</a>
+        <a class="nav-link" href="index.php">Fases/Grupos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="novo1.php">Classificatorias</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="resultados.php">Resultados</a>
