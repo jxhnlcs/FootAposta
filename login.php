@@ -21,7 +21,7 @@
             </div>
             <div class="links">
                 <a href="#">Forgot Password</a>
-                <a href="cadastro.php">Não tem cadastro?</a>
+                <a href="cadastro.php">Não tem cadastro??</a>
             </div>
             <button class="button" type="submit" value="Entrar">Entrar</button>
 </form>
