@@ -18,7 +18,7 @@ include "config.php";
 //Dados do Primeiro Jogo
 $timea1 = $_POST['cp2'];
 $timeb1 = $_POST['cp3'];
-$sql = "INSERT INTO aposta (t1,t2, login,data) VALUES ('$timea1','$timeb1','$login','$data')";
+$sql = "INSERT INTO flags (t1,t2, login,data) VALUES ('$timea1','$timeb1','$login','$data')";
 $query=$mysqli->query($sql);
 
 //Dados do Segundo Jogo

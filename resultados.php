@@ -1,8 +1,23 @@
 <?php
+session_start();
+if(empty($_SESSION['email'])){
+    echo "<script>alert('Por favor, realize seu login!')
+            window.location.href='login.php'</script>";
+}else{
+    $email = $_SESSION['email'];
+}
+include "_scripts/functions.php";
+
 include("_scripts/config.php");
 
 $consulta = "SELECT * FROM dados_jogos";
 $con = $mysqli->query($consulta) or die($mysqli->error);
+
+$consulta1 = "SELECT * FROM aposta";
+$con1 = $mysqli->query($consulta1) or die($mysqli->error);
+
+$consulta2 = "SELECT * FROM flags";
+$con2 = $mysqli->query($consulta2) or die($mysqli->error);
 ?>
 <html>
   <head>
@@ -61,8 +76,23 @@ $con = $mysqli->query($consulta) or die($mysqli->error);
       </table>
     </div>
 </div>
-  <div class="ImgBoxx">
-      <img src="./img/fut.png" class="futebol" id="meubem" alt="#">
+  <div class="right">
+  <div class="card">
+    <table>
+      <h1>Seus palpites</h1>
+        <?php while($dado = $con2->fetch_array()){?>
+        <tr class="cardd">
+          <td class="flag"><img class="img" src="img/<?php echo $dado['timea']; ?>.png"></td>
+          <td class="texto"> <?php echo $dado["timea"];?></td>
+          <td class="texto"> <?php echo $dado["t1"];?></td>
+          <td  class="xcaixinha"> X </td>
+          <td class="texto"> <?php echo $dado["t2"];?></td>
+          <td class="texto"> <?php echo $dado["timeb"];?></td>
+          <td class="flag"><img class="img" src="img/<?php echo $dado['timeb']; ?>.png"></td>
+        </tr>
+        <?php } ?>
+      </table>
+    </div>
   </div>
 </div>
 
